@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/0009-palindrome-number) |
+| [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/3754-concatenate-non-zero-digits-and-multiply-by-sum-i) |
 ## Array
 |  |
 | ------- |
