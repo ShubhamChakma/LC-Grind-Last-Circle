@@ -1,44 +1,47 @@
 class Solution {
 public:
     bool findSafeWalk(vector<vector<int>>& grid, int health) {
-        int m = grid.size(), n = grid[0].size();
+        int rows = grid.size();
+        int cols = grid[0].size();
+        vector<vector<int>> dist(rows, vector<int>(cols, INT_MAX));
+        deque<pair<int,int>> dq;
+        dist[0][0]=grid[0][0];
+        dq.push_front({0,0});
+        vector<pair<int,int>> directions = {
+            {-1,0}, {1,0},{0,-1},{0,1}
+        };
 
-        vector<vector<int>> dist(m, vector<int>(n, INT_MAX));
-        deque<pair<int, int>> dq;
-
-        dist[0][0] = grid[0][0];
-        dq.push_front({0, 0});
-
-        int dx[] = {-1, 1, 0, 0};
-        int dy[] = {0, 0, -1, 1};
-
-        while (!dq.empty()) {
-            auto [x, y] = dq.front();
+        while (!dq.empty()){
+            pair<int,int> current = dq.front();
             dq.pop_front();
 
-            if (x == m - 1 && y == n - 1)
-                return dist[x][y] < health;
+            int row = current.first;
+            int col = current.second;
 
-            for (int k = 0; k < 4; k++) {
-                int nx = x + dx[k];
-                int ny = y + dy[k];
+            for (auto dir : directions){
+                int newRow=row+dir.first;
+                int newCol=col+dir.second;
 
-                if (nx < 0 || nx >= m || ny < 0 || ny >= n)
+                if(newRow <0 ||
+                   newRow>= rows ||
+                   newCol <0 ||
+                   newCol>= cols){
                     continue;
-
-                int w = grid[nx][ny];
-
-                if (dist[x][y] + w < dist[nx][ny]) {
-                    dist[nx][ny] = dist[x][y] + w;
-
-                    if (w == 0)
-                        dq.push_front({nx, ny});
-                    else
-                        dq.push_back({nx, ny});
+                }
+                
+                int cost = grid[newRow][newCol];
+                int newHealthLost = dist[row][col]+cost;
+                if(newHealthLost<dist[newRow][newCol]){
+                    dist[newRow][newCol]=newHealthLost;
+                    if(cost==0){
+                        dq.push_front({newRow,newCol});
+                    }
+                    else{
+                        dq.push_back({newRow,newCol});
+                    }
                 }
             }
-        }
-
-        return dist[m - 1][n - 1] < health;
+        } 
+        return dist[rows-1][cols-1]< health;   
     }
 };
