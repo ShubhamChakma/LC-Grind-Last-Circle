@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [3499-maximize-active-section-with-trade-i](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/3499-maximize-active-section-with-trade-i) |
 | [3501-maximize-active-section-with-trade-ii](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/3501-maximize-active-section-with-trade-ii) |
+| [3517-smallest-palindromic-rearrangement-i](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/3517-smallest-palindromic-rearrangement-i) |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
 ## Hash Table
 |  |
@@ -125,6 +126,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0628-maximum-product-of-three-numbers](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/0628-maximum-product-of-three-numbers) |
 | [1288-remove-covered-intervals](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/1288-remove-covered-intervals) |
 | [1331-rank-transform-of-an-array](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/1331-rank-transform-of-an-array) |
+| [3517-smallest-palindromic-rearrangement-i](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/3517-smallest-palindromic-rearrangement-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3536-maximum-product-of-two-digits](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/3536-maximum-product-of-two-digits) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/3867-sum-of-gcd-of-formed-pairs) |
@@ -191,4 +193,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3501-maximize-active-section-with-trade-ii](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/3501-maximize-active-section-with-trade-ii) |
+## Counting Sort
+|  |
+| ------- |
+| [3517-smallest-palindromic-rearrangement-i](https://github.com/ShubhamChakma/Leetcode-Grind-Last-Circle/tree/master/3517-smallest-palindromic-rearrangement-i) |
 <!---LeetCode Topics End-->
